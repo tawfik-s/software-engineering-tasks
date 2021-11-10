@@ -1,8 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #eee;
-    margin: 0;
-    padding: 0;
+    background-color:white;
 }
 
 .row {
@@ -11,8 +9,8 @@ body {
 
 .row .leftSide {
     flex: 33.33333%;
-    background-color: #fff;
-    margin: 20px 10px 20px 20px;
+    background-color: white;
+    margin:20px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -72,7 +70,7 @@ body {
     background-color: #009688;
     text-align: center;
     font-size: 14px;
-    color: #fff;
+    color: white;
     line-height: 20px;
 }
  .cur1 { width: 60%; }
@@ -87,13 +85,13 @@ body {
 
 
 .row .rightSide {
-    flex: 66.66666%;
+    flex: 66%;
 }
 
 .row .rightSide .insideRow {
     flex: 100%;
-    background-color: #fff;
-    margin: 20px 20px 20px 10px;
+    background-color:white;
+    margin: 20px;
     padding: 20px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
 }
@@ -123,7 +121,7 @@ body {
 
 .row .rightSide .insideRow .jobInfo h6 span {
     background-color: #009688;
-    color: #fff;
+    color: white;
     border-radius: 3px;
     padding: 3px 5px;
 }
@@ -143,18 +141,42 @@ body {
 
 .footer {
     display: flex;
-    color: #fff;
+    color: white;
     background-color: #009688;
     padding: 30px;
     justify-content: center;
-    flex-direction: row;
 }
 
 footer i {
     font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 footer a {
-    text-decoration: none;
-    color: #fff;
+    color:white;
+    display: flex;
+    justify-content: center;
 }
+
+  
+@media screen and (max-width: 230px) {
+    body {
+      display: none;
+    }
+  }
+
+    
+@media screen and (max-width: 500px) {
+    .row{
+        display:block;
+    }
+    .row .rightSide .insideRow {
+        flex: 100%;
+        background-color:white;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    }
+
+  }
