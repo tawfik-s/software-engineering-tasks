@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
+import React, { Component } from "react";
+import './style.css'
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-</head>
+export default class Bage extends Component {
+  render() {
 
-<body>
-
+    return
+    <React.Fragment>
+    
     <div class="header">
         <h1>tawfik shalash</h1>
         <p>this is my offcial wep site you are welcome</p>
@@ -18,8 +17,6 @@
         <a href="https://twitter.com/ShalashTawfik" style="color: white;">twitter</a>
         <a href="https://www.instagram.com/tawfeekshalash/" style="color: white;">instagram</a>
         <a href="https://www.linkedin.com/in/tawfik-shalash-6517ab1b3/" style="color: white;">linkedIn</a>
-
-        <!-- <a href="#" style="float:right">Link</a> -->
     </div>
 
 
@@ -72,19 +69,7 @@
                     <p>Image</p>
                 </div>
             </div>
-            <div class="card">
-                <h3>Follow Me</h3>
-                <p>
-                    <a href="https://www.facebook.com/tawfeek.shalash/">facebook</a>
-                    <br>
-                    <a href="https://twitter.com/ShalashTawfik">twitter</a>
-                    <br>
-                    <a href="https://www.instagram.com/tawfeekshalash/">instagram</a>
-                    <a href="https://www.linkedin.com/in/tawfik-shalash-6517ab1b3/">linkedIn</a>
-
-                    <!-- <a href="#" style="float:right">Link</a> -->
-                </p>
-            </div>
+            
         </div>
     </div>
 
@@ -95,27 +80,12 @@
         <a href="https://www.linkedin.com/in/tawfik-shalash-6517ab1b3/">linkedIn</a>
     </div>
 
+</React.Fragment>;
 
-</body>
+  }
 
-</html>
-
-
-
+}
 
 
-<!-- <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script> -->
+
+
